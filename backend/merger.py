@@ -84,7 +84,7 @@ class Merger:
     def _key(b: dict) -> str:
         if b.get("isbn"):
             return "isbn:" + b["isbn"].replace("-", "")
-        return "ta:" + fuzz.token_sort_ratio and (b["title"].lower().strip() + "|" + (b["authors"] or [""])[0].lower().strip())
+        return "ta:" + (b["title"].lower().strip() + "|" + (b["authors"] or [""])[0].lower().strip())
 
     async def merge(self, g: list, o: list) -> List[Book]:
         merged = {}
