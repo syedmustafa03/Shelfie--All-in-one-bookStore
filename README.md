@@ -3,9 +3,9 @@ A field guide to everything in print — search any title and get the story, the
 Demo
 ![Hero](docs/screenshots/hero.png)
 Search surfaces real-time results pulled and merged from multiple sources:
-![Search results](docs/screenshots/search-results.png)
+![Search results](docs/screenshots/search.png)
 Curated shelves for discovery — Trending, Hidden Gems, Quick Reads, and more:
-![Discover shelves](docs/screenshots/discover.png)
+![Discover shelves](docs/screenshots/main page.png)
 Each book has a dedicated detail page with buy links across retailers and free-read options:
 ![Book detail](docs/screenshots/book-detail.png)
 Tech Stack
