@@ -1,18 +1,17 @@
-# Shelfie — Every book. Every way to get it.
+Shelfie
+A field guide to everything in print — search any title and get the story, the shelves, the buy links, and the free reads in one place.
+Demo
+![Hero](docs/screenshots/hero.png)
+Search surfaces real-time results pulled and merged from multiple sources:
+![Search results](docs/screenshots/search-results.png)
+Curated shelves for discovery — Trending, Hidden Gems, Quick Reads, and more:
+![Discover shelves](docs/screenshots/discover.png)
+Each book has a dedicated detail page with buy links across retailers and free-read options:
+![Book detail](docs/screenshots/book-detail.png)
+Tech Stack
+Frontend: React, TypeScript, Vite
+Backend: FastAPI, Python — merges and deduplicates results across multiple book-data sources with fuzzy matching (`rapidfuzz`)
 
-A book-discovery site that feels like a literary magazine, not a library catalog.
-
-## Run it
-
-Backend (FastAPI, merges Google Books + Open Library):
-    cd shelfie/backend
-    pip install -r requirements.txt
-    uvicorn main:app --reload --port 8000
-
-Frontend (React + Tailwind + Framer Motion):
-    cd shelfie/frontend
-    npm install
-    npm run dev
 
 Optional: set OPENAI_API_KEY to enable LLM fallback summaries when both APIs
 return a missing/short description. Otherwise a honest heuristic blurb is used.
